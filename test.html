@@ -1,32 +1,36 @@
-<!-- <head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-</head>
-
--->
-<html><head>
-<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+﻿<html><head>
 <title>M.nu rullgardinsmästare</title>
 <style>
+h2 {
+  font-family: Open Sans;
+}
+body {
+  text-align: center;
+}
 .btn {
-    background-color: #D60412; /* Red */
-    border: none;
+    line-height: 2em;
+    background: #D60412; /* Red */
     color: white;
-    padding: 15px 32px;
+    padding: 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 28px;
+    width: 3em;
+    height: 2em;
 }
-.btn:hover:enabled {
-    background-color: #9E050F;
+.btn:hover {
+  background: #9E050F;
 }
-.btn:disabled {
-  background-color: #7A4C4F;
+.btn-disabled {
+  background: #7A4C4F;
+  pointer-events: none;
 }
 </style></head>
-<body><div>
+<body>
   <h2>Blind master</h2>
-  <h3>Local blind</h3>
-  <button type="button" class="btn" disabled>Testknapp</button>
-  <button type="button" class="btn">Testknapp</button></div>
+  <div>
+    <a class="btn btn-disabled" href="/up">&#9650;</a>
+    <a class="btn" href="/stop">&#11035;</a>
+    <a class="btn" href="/down">&#9660;</a></div>
 </body></html>
