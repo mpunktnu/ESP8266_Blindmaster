@@ -95,6 +95,7 @@ String buildHtml(uint8_t dir) {
   String baseString = "";     // C is apparently broken...
   baseString = baseString + "<html><head>"+
 "<title>M.nu rullgardinsmästare</title>"+
+"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"+
 "<style>"+
 "h2 {"+
 "  font-family: Open Sans;"+
@@ -136,4 +137,3 @@ baseString = baseString +
 
   return baseString + "</body></html>";
 }
-
