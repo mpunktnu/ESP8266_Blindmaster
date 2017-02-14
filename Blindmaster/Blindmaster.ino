@@ -103,17 +103,18 @@ String buildHtml(uint8_t dir) {
 "body {"+
 "  text-align: center;"+
 "}"+
+".buttons {"+
+"    display: flex;"+
+"    justify-content: stretch;"+
+"}"+
 ".btn {"+
 "    line-height: 2em;"+
 "    background: #D60412;"+
 "    color: white;"+
-"    padding: 0px;"+
 "    text-align: center;"+
 "    text-decoration: none;"+
-"    display: inline-block;"+
 "    font-size: 28px;"+
-"    width: 3em;"+
-"    height: 2em;"+
+"    flex-grow: 1;"+
 "}"+
 ".btn:hover {"+
 "  background: #9E050F;"+
@@ -125,7 +126,7 @@ String buildHtml(uint8_t dir) {
 "</style></head>"+
 "<body>"+
 "  <h2>Blind master</h2>"+
-"  <div>";
+"  <div class=\"buttons\">";
 
 // Disable button depending on fetched URL. Uses inline ifs
 // Syntax (condition) ? true-case : false-case
